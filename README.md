@@ -10,3 +10,30 @@ The project includes:
 - Logs: Folder for TensorBoard logs to monitor neural network progress.
 
 ## Setup and Requirements
+### Installation
+1. Clone this repository:
+   ```
+   git clone https://github.com/Devansh-Gupta-Official/sign-language-detector.git
+   cd sign-language-detector
+   ```
+2. Install the required libraries:
+   ```
+   pip install -r requirements.txt
+   ```
+### Usage
+- Open the Jupyter Notebook code.ipynb to run the code.
+- Ensure a webcam is connected for live sign language detection.
+- Adjust parameters such as no_sequences, sequence_length, etc., for data collection as needed.
+
+## Data Collection and Training
+1. The notebook contains code for capturing webcam frames, extracting keypoints using MediaPipe, and storing the data in the MP_data directory.
+2. The data is preprocessed, split into training and testing sets, and used to train the LSTM Neural Network for sign language classification.
+
+## Model Evaluation
+Evaluation metrics such as multilabel confusion matrix and accuracy score are calculated on the trained model using the testing set.
+
+## Live Sign Language Detection
+- The notebook provides a live demonstration of sign language detection using the trained model.
+- OpenCV displays the webcam feed, tracks pose and hand landmarks, predicts signs, and visualizes the detected signs with real-time feedback.
+
+## Results
